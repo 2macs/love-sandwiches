@@ -45,11 +45,21 @@ def validate_data(values):
         if len(values) != 6:
             raise ValueError(f'Exactly 6 values expected, you provided {len(values)}')
     except ValueError as e:
-            print(f'Invalid data {e}, please try again \n')
-            return False
+        print(f'Invalid data {e}, please try again \n')
+        return False
     
     return True
 
+def update_sales_worksheet(data):
+    """
+    This function updates the sales worksheet with sales data provided by the user
+    """
+    print('Updating the sales data worksheet....') 
+
     
 data = get_sales_data()
+sales_data = [int(num) for num in data]
+update_sales_worksheet(sales_data)
+
+
 
