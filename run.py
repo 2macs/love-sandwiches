@@ -52,9 +52,9 @@ def validate_data(values):
 
 def update_sales_worksheet(data):
     """
-    This function updates the sales worksheet with sales data provided by the user
+    This function updates the sales worksheet with sales data provided
     """
-    print('Updating the sales data worksheet....') 
+    print('Updating the sales data worksheet....\n') 
 
     
 data = get_sales_data()
