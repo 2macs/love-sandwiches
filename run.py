@@ -55,6 +55,10 @@ def update_sales_worksheet(data):
     This function updates the sales worksheet with sales data provided
     """
     print('Updating the sales data worksheet....\n') 
+    sales_worksheet = SHEET.worksheet('sales')
+    sales_worksheet.append_row(data)
+    print('Worksheet updated successfully.\n')
+
 
     
 data = get_sales_data()
